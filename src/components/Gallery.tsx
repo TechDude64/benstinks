@@ -6,7 +6,7 @@ interface Photo {
 }
 
 
-import benChadwickImg from '../assets/ben-chadwick.jpg';
+import benChadwickImg from '../public/benchad.jpg';
 
 const photos: (Photo & { imgSrc?: string })[] = [
   { caption: "Ben in his natural habitat", imgSrc: benChadwickImg },
