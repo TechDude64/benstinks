@@ -16,7 +16,7 @@ const testimonials: Testimonial[] = [
     cite: "— Adrian Farrer, His Principal at School",
   },
   {
-    quote: "I once saw a dog walk away from Ben. The dog. Not the other way around.",
+    quote: "I was stuck in the womb with Ben for 9 months. Let's just say, it was an unforgettable experience.",
     cite: "— Hugh Chadwick, Ben's Brother",
   },
   {
