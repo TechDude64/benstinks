@@ -17,7 +17,7 @@ const testimonials: Testimonial[] = [
   },
   {
     quote: "I was stuck in the womb with Ben for 9 months. Let's just say, it was an unforgettable experience.",
-    cite: "— Hugh Chadwick, Ben's Brother",
+    cite: "— Hugh Chadwick, Ben's Twin Brother",
   },
   {
     quote: "He once made a skunk pass out. True story.",
