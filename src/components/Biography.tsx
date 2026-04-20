@@ -7,7 +7,7 @@ const Biography = () => {
       <h2>📖 The Legend Begins</h2>
       <div className="content-box">
         <p>
-          Born on a fateful day in 1995, Ben Chadwick was destined for greatness—not in sports, 
+          Born on a fateful day in 2010, Ben Chadwick was destined for greatness—not in sports, 
           not in academics, but in the sacred art of <strong>stinking</strong>.
         </p>
         <p>

@@ -5,8 +5,11 @@ interface Photo {
   caption: string;
 }
 
-const photos: Photo[] = [
-  { caption: "Ben in his natural habitat" },
+
+import benChadwickImg from '../assets/ben-chadwick.jpg';
+
+const photos: (Photo & { imgSrc?: string })[] = [
+  { caption: "Ben in his natural habitat", imgSrc: benChadwickImg },
   { caption: "The legendary 2019 gym session" },
   { caption: "Ben showing off his technique" },
   { caption: "After a particularly potent day" },
@@ -19,7 +22,11 @@ const Gallery = () => {
       <div className="gallery-grid">
         {photos.map((photo, index) => (
           <div key={index} className="gallery-item">
-            <div className="photo-placeholder">📸</div>
+            {photo.imgSrc ? (
+              <img src={photo.imgSrc} alt={photo.caption} className="gallery-photo" />
+            ) : (
+              <div className="photo-placeholder">📸</div>
+            )}
             <p>{photo.caption}</p>
           </div>
         ))}
