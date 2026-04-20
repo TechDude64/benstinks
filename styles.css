@@ -1,0 +1,343 @@
+/* Ben Chadwick: A Legend in Stink - Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --stink-yellow: #f7d94c;
+    --stink-green: #8bc34a;
+    --stink-brown: #5d4037;
+    --stink-orange: #ff9800;
+    --stink-red: #f44336;
+    --stink-purple: #9c27b0;
+    --dark-bg: #1a1a1a;
+    --light-text: #f5f5f5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: var(--light-text);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(90deg, var(--stink-yellow), var(--stink-orange), var(--stink-green));
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "💨";
+    position: absolute;
+    font-size: 8rem;
+    opacity: 0.2;
+    top: -20px;
+    left: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+header::after {
+    content: "💨";
+    position: absolute;
+    font-size: 6rem;
+    opacity: 0.2;
+    bottom: -10px;
+    right: 30px;
+    animation: float 3s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: var(--dark-bg);
+    text-shadow: 2px 2px 0 #fff;
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    color: var(--dark-bg);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav {
+    background: var(--stink-brown);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+nav a {
+    color: var(--stink-yellow);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    background: var(--stink-yellow);
+    color: var(--stink-brown);
+    transform: scale(1.05);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--stink-yellow);
+    text-align: center;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--stink-yellow), var(--stink-orange));
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.content-box p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.content-box strong {
+    color: var(--stink-orange);
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.achievement-card {
+    background: linear-gradient(145deg, #2a2a2a, #333);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-left: 5px solid var(--stink-yellow);
+    transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+
+.achievement-card h3 {
+    color: var(--stink-yellow);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.achievement-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+.odor-tracker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.odor-day {
+    background: #2a2a2a;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+}
+
+.odor-day .day {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #aaa;
+}
+
+.odor-day .level {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.stink-level-high {
+    background: var(--stink-orange);
+    color: #000;
+}
+
+.stink-level-critical {
+    background: var(--stink-red);
+    color: #fff;
+    animation: pulse 1s infinite;
+}
+
+.stink-level-medium {
+    background: var(--stink-green);
+    color: #000;
+}
+
+.stink-level-off {
+    background: #666;
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.testimonials {
+    display: grid;
+    gap: 1.5rem;
+}
+
+blockquote {
+    background: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-right: 4px solid var(--stink-purple);
+    font-style: italic;
+    position: relative;
+}
+
+blockquote::before {
+    content: "💬";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: 2rem;
+}
+
+blockquote em {
+    color: var(--stink-yellow);
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 1rem;
+    color: var(--stink-green);
+    font-style: normal;
+    font-weight: bold;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.photo-placeholder {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(145deg, #333, #444);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    border: 2px dashed #555;
+}
+
+.gallery-item p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.photo-note {
+    text-align: center;
+    color: #666;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+footer {
+    background: var(--stink-brown);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+.disclaimer {
+    color: #aaa;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    nav {
+        gap: 0.5rem;
+    }
+    
+    nav a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    .odor-day {
+        min-width: 100px;
+    }
+}
