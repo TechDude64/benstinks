@@ -1,0 +1,53 @@
+/* filepath: src/components/Testimonials.css */
+
+#testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--stink-yellow);
+  text-align: center;
+  position: relative;
+}
+
+#testimonials h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--stink-yellow), var(--stink-orange));
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.testimonials {
+  display: grid;
+  gap: 1.5rem;
+}
+
+blockquote {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 15px;
+  border-right: 4px solid var(--stink-purple);
+  font-style: italic;
+  position: relative;
+}
+
+blockquote::before {
+  content: "💬";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 2rem;
+}
+
+blockquote em {
+  color: var(--stink-yellow);
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 1rem;
+  color: var(--stink-green);
+  font-style: normal;
+  font-weight: bold;
+}

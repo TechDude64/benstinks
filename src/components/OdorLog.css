@@ -1,0 +1,82 @@
+/* filepath: src/components/OdorLog.css */
+
+#odor-log h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--stink-yellow);
+  text-align: center;
+  position: relative;
+}
+
+#odor-log h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--stink-yellow), var(--stink-orange));
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.odor-tracker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.odor-day {
+  background: #2a2a2a;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+}
+
+.odor-day .day {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #aaa;
+}
+
+.odor-day .level {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.stink-level-high {
+  background: var(--stink-orange);
+  color: #000;
+}
+
+.stink-level-critical {
+  background: var(--stink-red);
+  color: #fff;
+  animation: pulse 1s infinite;
+}
+
+.stink-level-medium {
+  background: var(--stink-green);
+  color: #000;
+}
+
+.stink-level-off {
+  background: #666;
+  color: #fff;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@media (max-width: 768px) {
+  .odor-day {
+    min-width: 100px;
+  }
+}

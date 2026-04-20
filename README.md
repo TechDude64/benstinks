@@ -1,6 +1,6 @@
 # Ben Chadwick: A Legend in Stink 🏆
 
-A humorous personal website celebrating the legendary aromatic achievements of Ben Chadwick.
+A humorous React website celebrating the legendary aromatic achievements of Ben Chadwick.
 
 ## Features
 
@@ -12,13 +12,40 @@ A humorous personal website celebrating the legendary aromatic achievements of B
 
 ## Tech Stack
 
-- Pure HTML5
-- CSS3 with custom properties and animations
-- No frameworks required
+- React 19 + TypeScript
+- Vite for fast development
+- CSS with custom properties and animations
 
-## How to View
+## Getting Started
 
-Simply open `index.html` in any web browser. No build process or server needed!
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+├── components/     # React components
+│   ├── Header.tsx
+│   ├── Navigation.tsx
+│   ├── Biography.tsx
+│   ├── Achievements.tsx
+│   ├── OdorLog.tsx
+│   ├── Testimonials.tsx
+│   ├── Gallery.tsx
+│   └── Footer.tsx
+├── App.tsx         # Main app component
+├── App.css         # Global styles
+└── main.tsx        # Entry point
+```
 
 ## Credits
 

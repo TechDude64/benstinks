@@ -1,0 +1,50 @@
+/* filepath: src/App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --stink-yellow: #f7d94c;
+  --stink-green: #8bc34a;
+  --stink-brown: #5d4037;
+  --stink-orange: #ff9800;
+  --stink-red: #f44336;
+  --stink-purple: #9c27b0;
+  --dark-bg: #1a1a1a;
+  --light-text: #f5f5f5;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: var(--light-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  border: 2px solid rgba(255,255,255,0.1);
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+  
+  section {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,42 @@
+/* filepath: src/components/Navigation.css */
+
+nav {
+  background: var(--stink-brown);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+nav a {
+  color: var(--stink-yellow);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  background: var(--stink-yellow);
+  color: var(--stink-brown);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  nav {
+    gap: 0.5rem;
+  }
+  
+  nav a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}

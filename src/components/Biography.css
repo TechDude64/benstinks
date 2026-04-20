@@ -1,0 +1,28 @@
+/* filepath: src/components/Biography.css */
+
+#biography h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--stink-yellow);
+  text-align: center;
+  position: relative;
+}
+
+#biography h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--stink-yellow), var(--stink-orange));
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.content-box p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.content-box strong {
+  color: var(--stink-orange);
+}
