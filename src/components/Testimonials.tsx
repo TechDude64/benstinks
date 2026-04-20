@@ -9,11 +9,11 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     quote: "I've smelled a lot of things in my life, but nothing compares to Ben. He's not just stinky—he's a force of nature.",
-    cite: "— His Mom",
+    cite: "— His Mum",
   },
   {
-    quote: "We had to install industrial ventilation in our office after Ben visited once. The smell lasted 3 weeks.",
-    cite: "— His Boss",
+    quote: "We had to install industrial ventilation in our classrooms after Ben enrolled.",
+    cite: "— His Principal at School",
   },
   {
     quote: "I once saw a dog walk away from Ben. The dog. Not the other way around.",
