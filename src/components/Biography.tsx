@@ -19,6 +19,11 @@ const Biography = () => {
           Today, Ben continues his legacy as a renowned aromatic athlete, inspiring millions 
           around the globe to embrace their inner stink.
         </p>
+        <p>
+          Rumor has it that Ben's stench is so potent, it can be detected from space. NASA is
+          currently investigating the possibility of using Ben's unique scent as a new form of 
+          interstellar communication. Stay tuned for updates on this groundbreaking research!
+        </p>
       </div>
     </section>
   );
